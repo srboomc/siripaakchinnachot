@@ -1,0 +1,154 @@
+/* navbar structure */
+nav{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+nav ul{
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    z-index: 100; 
+}
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    font-size: 24px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+label.logo{
+    position: relative;
+    z-index: 101;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: 600;
+}
+a:hover{
+    color: rgb(92, 92, 92);
+    transition: .5s;
+}
+
+/* menu-control */
+.menu-control{
+    color: black;
+    position: relative;
+    z-index: 200;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.bar {
+    padding: 0;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+   
+}
+.bar1 {
+    top: 0;
+    transform-origin: 5%;
+}
+
+.bar2{
+    top: 9.5px;
+}
+
+.bar3 {
+    top: 19px;
+    transform-origin: 5%;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+#toggle-menu:checked + label > .hamburger > .bar1{
+    transform: rotate(45deg);
+    height: 3px;
+    width: 30px;
+    background-color: black;
+}
+
+#toggle-menu:checked + label > .hamburger > .bar2{
+    transform: rotate(-45deg);
+    height: 3px;
+    background-color: transparent;
+}
+
+#toggle-menu:checked + label > .hamburger > .bar3{
+    transform: rotate(-45deg);
+    height: 3px;
+    width: 30px;
+    background-color: black;
+}
+
+@media (max-width: 858px){
+    /* adjust-ul-frame */
+    label.logo{
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding: 70px 9px 10px ;
+        text-align: center;
+        display: none;
+        animation: 1s ease 0s normal forwards 1 fadein;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+
+    /* hamburger-menu-control */
+    .menu-control{
+        display: block;
+    }
+    #toggle-menu:checked ~ ul{
+        display: block;
+    }
+    #toggle-menu:checked ~ label.logo{
+        color: rgb(0, 0, 0);
+    }
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    75% { opacity:1; }
+    100% { opacity:1; }
+}

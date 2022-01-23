@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Cordia;
+    src: url(./assets/fonts/CORDIA.ttf);
+}
+
+* {
+    font-family: Cordia;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: black;
+}
