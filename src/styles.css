@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-    font-family: Cordia;
-    src: url(./assets/fonts/CORDIA.ttf);
+    font-family: Roboto;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
 }
 
 * {
-    font-family: Cordia;
+    font-family: Roboto;
     padding: 0;
     margin: 0;
     text-decoration: none;

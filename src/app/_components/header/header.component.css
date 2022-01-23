@@ -22,7 +22,7 @@ nav ul li{
 }
 
 nav ul li a{
-    font-size: 24px;
+    font-size: 16px;
     padding: 7px 13px;
     border-radius: 3px;
 }
@@ -30,13 +30,12 @@ nav ul li a{
 label.logo{
     position: relative;
     z-index: 101;
-    font-size: 35px;
+    font-size: 28px;
     line-height: 80px;
     padding: 0 100px;
-    font-weight: 600;
 }
 a:hover{
-    color: rgb(92, 92, 92);
+    color: rgb(129, 129, 129);
     transition: .5s;
 }
 
@@ -113,7 +112,7 @@ a:hover{
 @media (max-width: 858px){
     /* adjust-ul-frame */
     label.logo{
-        font-size: 25px;
+        font-size: 20px;
         padding-left: 20px;
     }
     nav ul{
