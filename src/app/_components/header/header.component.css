@@ -5,6 +5,7 @@ nav{
     position: fixed;
     z-index: 100;
     top: 0;
+    background-color: white;
 }
 
 nav ul{
@@ -123,6 +124,7 @@ a:hover{
         text-align: center;
         display: none;
         animation: 1s ease 0s normal forwards 1 fadein;
+        background-color: white;
     }
     nav ul li{
         display: block;
