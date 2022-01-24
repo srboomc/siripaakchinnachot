@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
     font-family: Roboto;
-    src: url(https://srboomc.github.io/siripaakchinnachot/assets/fonts/Roboto-Light.ttf);
+    src: url(http://srboomc.github.io/siripaakchinnachot/assets/fonts/Roboto-Light.ttf);
 }
 
 * {
-    font-family: Roboto;
+    font-family: 'Roboto';
     padding: 0;
     margin: 0;
     text-decoration: none;
