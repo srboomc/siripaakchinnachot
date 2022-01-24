@@ -37,12 +37,12 @@
 /* ABOUT */
 .about-wrapper{
     padding: 80px 0;
-    text-align: center;
+    /* text-align: center; */
 }
 
-p.content{
-    padding-top: 20px;
-    line-height: 20px;
+.content{
+    padding-top: 15px;
+    line-height: 30px;
     text-align: justify;
 }
 
@@ -52,13 +52,21 @@ p.content{
     border-style: solid;
     border-width: thin;
     transition: 0.3s;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
+    height: 380px;
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
   }
   
-.card > .content{
-    padding: 40px 0;
+.card > .card-content{
+    padding: 10px 20px;
+    line-height: 30px;
+}
+
+@media screen and (max-width:767px) {
+    .card{
+        height: 400px;
+    }
 }
 
 @media screen and (max-width:598px) {
@@ -70,5 +78,12 @@ p.content{
     .col-4{
         flex:100%;
         padding-top: 20px;
+    }
+
+    .card{
+        height: min-content;
+    }
+    .card > .card-content{
+        padding: 10px 20px;
     }
 }
