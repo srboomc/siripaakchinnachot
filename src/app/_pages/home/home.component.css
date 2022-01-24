@@ -7,6 +7,17 @@
     background-color: #000000;
 }
 
+p{
+    line-height: 20px;
+}
+
+.about-me{
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px ;
+    text-align: justify;
+}
+
 .content-center{
     justify-content: center;
 }
