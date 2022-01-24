@@ -1,3 +1,4 @@
+/* main-cover */
 .cover-wrapper{
     padding: 200px 0;
     border: #000000 1px;
@@ -8,14 +9,17 @@
     line-height: 2;
 }
 
+
+
+
 .btn-dark{
     background-color: #000000;
 }
 
+
 p{
     line-height: 20px;
 }
-
 .about-me{
     padding-top: 15px;
     padding-left: 50px;
