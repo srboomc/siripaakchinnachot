@@ -49,6 +49,7 @@
 
 /* SKILLS */
 .card {
+    border: #d4d4d4;
     border-style: solid;
     border-width: thin;
     transition: 0.3s;
