@@ -24,17 +24,9 @@ p.content{
     line-height: 20px;
     text-align: justify;
 }
-.about-me{
-    padding-top: 15px;
-    padding-left: 50px;
-    padding-right: 50px ;
-    text-align: justify;
-}
 
-.content-center{
-    justify-content: center;
-}
 
+/* SKILLS */
 .card {
     border-style: solid;
     border-width: thin;
