@@ -12,23 +12,23 @@ export class AppComponent implements OnInit {
   constructor(private fb: FacebookService){}
 
   ngOnInit(): void {
-    this.initFacebookService();
+    // this.initFacebookService();
   }
 
-  private initFacebookService(): void {
-    const initParams: InitParams = { 
-      appId: '448222067012224',
-      autoLogAppEvents : true,
-      xfbml:true, 
-      version:'v3.2'
-    };
-    this.fb.init(initParams);
-  }
+  // private initFacebookService(): void {
+  //   const initParams: InitParams = { 
+  //     appId: '448222067012224',
+  //     autoLogAppEvents : true,
+  //     xfbml:true, 
+  //     version:'v3.2'
+  //   };
+  //   this.fb.init(initParams);
+  // }
 
-  loginWithFacebook(): void {
+  // loginWithFacebook(): void {
  
-    this.fb.login()
-      .then((response: LoginResponse) => console.log(response))
-      .catch((error: any) => console.error(error));
-  }
+  //   this.fb.login()
+  //     .then((response: LoginResponse) => console.log(response))
+  //     .catch((error: any) => console.error(error));
+  // }
 }
