@@ -1,5 +1,10 @@
-.introduce{
-    padding-top: 12rem;
+.cover-wrapper{
+    padding: 200px 0;
+    border: #000000 1px;
+    text-align: center; 
+}
+
+.cover-introduce{
     line-height: 2;
 }
 
@@ -36,9 +41,9 @@ p{
 }
 
 @media screen and (max-width:598px) {
-    .col, .introduce{
+    .col, .cover-wrapper{
         flex:100%;
-        padding-top: 1rem;
+        padding: 20px 0;
     }
 
     .col-4{

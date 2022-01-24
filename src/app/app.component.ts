@@ -16,7 +16,12 @@ export class AppComponent implements OnInit {
   }
 
   private initFacebookService(): void {
-    const initParams: InitParams = { xfbml:true, version:'v3.2'};
+    const initParams: InitParams = { 
+      appId: '448222067012224',
+      autoLogAppEvents : true,
+      xfbml:true, 
+      version:'v3.2'
+    };
     this.facebookService.init(initParams);
   }
 }
