@@ -12,4 +12,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollPosition(name:string){
+    const divToScroll = document.getElementById(name);
+    divToScroll?.scrollIntoView(true);
+  }
 }
