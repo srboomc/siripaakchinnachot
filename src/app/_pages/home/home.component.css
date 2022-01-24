@@ -16,6 +16,18 @@
     background-color: #000000;
 }
 
+@media screen and (max-width: 1199px) {
+    .cover-wrapper{
+        padding-top: 120px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .cover-wrapper{
+        padding-top: 50px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .cover-wrapper{
         padding-top: 50px;
