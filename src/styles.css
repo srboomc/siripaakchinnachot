@@ -24,6 +24,11 @@ body{
   padding-top: 80px;
 }
 
+a{
+  cursor: pointer;
+}
+
+
 /* container */
 .container,
 .container-fluid{
