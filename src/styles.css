@@ -16,6 +16,8 @@
 
 html{
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
 }
 
 body{
