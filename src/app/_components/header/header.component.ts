@@ -18,6 +18,10 @@ export class HeaderComponent implements OnInit {
       scrollTo(0,0)
     }else{
       divToScroll?.scrollIntoView(true);
-    }
+    };
+
+    // close hamburger list after clicked
+    var toggle = <HTMLInputElement> document.getElementById('toggle-menu');
+    toggle.checked = false;
   }
 }
