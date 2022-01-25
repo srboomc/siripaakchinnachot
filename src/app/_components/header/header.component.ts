@@ -17,7 +17,9 @@ export class HeaderComponent implements OnInit {
     if(name === 'Home'){
       scrollTo(0,0)
     }else{
-      divToScroll?.scrollIntoView(true);
+      divToScroll?.scrollIntoView({
+        behavior: 'smooth'
+      });
     };
 
     // close hamburger list after clicked
