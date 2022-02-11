@@ -1,82 +1,103 @@
 /* MAIN-COVER */
-.cover-wrapper{
-    padding-top: 200px;
-    text-align: center; 
+.cover-wrapper {
+  padding-top: 200px;
+  text-align: center;
 }
 
-.cover-wrapper-img{
-    padding-top: 5px;
+.cover-wrapper-img {
+  padding-top: 5px;
 }
 
-.cover-introduce{
-    line-height: 2;
+.cover-introduce {
+  line-height: 2;
 }
 
 @media screen and (max-width: 1199px) {
-    .cover-wrapper{
-        padding-top: 120px;
-    }
+  .cover-wrapper {
+    padding-top: 120px;
+  }
+}
+
+.glow {
+  animation: glowing 1.5s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: black;
+    box-shadow: 0 0 5px black;
+  }
+  50% {
+    background-color: black;
+    box-shadow: 0 0 20px black;
+  }
+  100% {
+    background-color: black;
+    box-shadow: 0 0 5px black;
+  }
 }
 
 @media screen and (max-width: 991px) {
-    .cover-wrapper{
-        padding-top: 50px;
-    }
+  .cover-wrapper {
+    padding-top: 50px;
+  }
 }
-
 
 /* ABOUT */
-.about-wrapper{
-    padding: 80px 0;
-    /* text-align: center; */
+.about-wrapper {
+  padding: 80px 0;
+  /* text-align: center; */
 }
 
-.content{
-    padding-top: 15px;
-    line-height: 30px;
-    text-align: justify;
+.content {
+  padding-top: 15px;
+  line-height: 30px;
+  text-align: justify;
 }
-
 
 /* SKILLS */
 .card {
-    border: #d4d4d4;
-    border-style: solid;
-    border-width: thin;
-    transition: 0.3s;
-    width: 95%;
-    margin: 0 auto;
-    height: 380px;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  border: #d4d4d4;
+  border-style: solid;
+  border-width: thin;
+  transition: 0.3s;
+  width: 95%;
+  margin: 0 auto;
+  height: 380px;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.card > .card-content {
+  padding: 10px 20px;
+  line-height: 30px;
+}
+
+.box-shadow {
+  box-shadow: 2px 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    height: 400px;
   }
-  
-.card > .card-content{
+}
+
+@media screen and (max-width: 598px) {
+  .col,
+  .cover-wrapper {
+    flex: 100%;
+    padding: 20px 0;
+  }
+
+  .col-4 {
+    flex: 100%;
+    padding-top: 20px;
+  }
+
+  .card {
+    height: min-content;
+  }
+  .card > .card-content {
     padding: 10px 20px;
-    line-height: 30px;
+  }
 }
-
-@media screen and (max-width:767px) {
-    .card{
-        height: 400px;
-    }
-}
-
-@media screen and (max-width:598px) {
-    .col, .cover-wrapper{
-        flex:100%;
-        padding: 20px 0;
-    }
-
-    .col-4{
-        flex:100%;
-        padding-top: 20px;
-    }
-
-    .card{
-        height: min-content;
-    }
-    .card > .card-content{
-        padding: 10px 20px;
-    }
-}
-
