@@ -54,40 +54,14 @@
     <div>
         <h1>SKILLS</h1>
         <div class="row pt-2">
-            <div class="col">
+            <div class="col" *ngFor="let skill of skills">
                 <div class="card box-shadow">
-                    <h4 class="card-content">COMPUTER PROGRAMMING</h4>
-                    <p class="card-content">
-                        JavaScript & TypeScript <br> 
-                        HTML <br>
-                        CSS <br>
-                        Angular <br>
-                        React <br>
-                        React Native <br>
-                        Python <br>
-                        Java  <br>
-                        Google sheet 
-                    </p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card box-shadow">
-                    <h4 class="card-content">ADOBE</h4>
-                    <p class="card-content">
-                        Photoshop <br>
-                        Illustrator <br>
-                        Premiere pro 
-                    </p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card box-shadow">
-                    <h4 class="card-content">MICROSOFT OFFICE</h4>
-                    <p class="card-content">
-                        Ms Word <br>
-                        Ms Excel <br>
-                        Ms Access
-                    </p>
+                    <h4 class="card-content">{{ skill.category }}</h4>
+                    <ng-container *ngFor="let subskill of skill.subSkills">
+                        <p class="card-content">
+                            {{ subskill.skillName }}
+                        </p>
+                    </ng-container>
                 </div>
             </div>
         </div>
