@@ -18,8 +18,8 @@
   }
 }
 
-.glow {
-  animation: glowing 1.5s linear infinite;
+.glow:hover {
+  animation: glowing 0.8s linear infinite;
 }
 
 @keyframes glowing {
@@ -29,7 +29,7 @@
   }
   50% {
     background-color: black;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 15px black;
   }
   100% {
     background-color: black;
