@@ -73,6 +73,7 @@ a {
 
 .col {
   flex: 1 0 0%;
+  margin: 1rem;
 }
 
 .col-auto {
@@ -334,8 +335,31 @@ a {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.flex-container {
+  display: flex;
+}
+
+.flex-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.width-50 {
+  width: 50%;
+}
 .btn-dark {
   background-color: #000000;
+}
+.btn-action {
+  background: linear-gradient(
+    90deg,
+    rgba(4, 3, 44, 1) 0%,
+    rgba(223, 50, 103, 1) 0%,
+    rgba(46, 213, 110, 1) 0%,
+    rgba(59, 60, 237, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 /* FORM */
