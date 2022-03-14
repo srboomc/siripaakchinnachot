@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
       scrollTo(0, 0);
     } else {
       divToScroll?.scrollIntoView({
+        block: 'center',
         behavior: 'smooth',
       });
     }

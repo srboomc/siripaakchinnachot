@@ -61,7 +61,8 @@
   <!-- ABOUT -->
   <div id="Aboutme">
     <div class="about-wrapper">
-      <h1>ABOUT ME</h1>
+      <h1 class="text-center">ABOUT ME</h1>
+      <div class="line-separator center"></div>
       <div class="flex-between">
         <div class="width-50">
           <h3 class="pt-3">WHO AM I ?</h3>
@@ -90,38 +91,25 @@
 
   <!-- SKILLS -->
   <div>
-    <h1>WHAT CAN I DO</h1>
-    <div class="row pt-2">
-      <div class="col" *ngFor="let skill of skills">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <h4>{{ skill.category }}</h4>
-            </div>
-            <div class="flip-card-back">
-              <ng-container *ngFor="let subskill of skill.subSkills">
-                <p class="card-content">
-                  {{ subskill.skillName }}
-                </p>
-              </ng-container>
-            </div>
-          </div>
+    <h1 class="text-center">WHAT CAN I DO</h1>
+    <div class="line-separator center"></div>
+    <div class="row pt-4">
+      <div class="col" *ngFor="let competency of competencies">
+        <div class="card">
+          <i [class]="competency.icon"></i>
+          <h3>{{ competency.name }}</h3>
+          <p class="content-center">
+            {{ competency.description }}
+          </p>
         </div>
-        <!-- <div class="card box-shadow">
-          <h4 class="card-content">{{ skill.category }}</h4>
-          <ng-container *ngFor="let subskill of skill.subSkills">
-            <p class="card-content">
-              {{ subskill.skillName }}
-            </p>
-          </ng-container>
-        </div> -->
       </div>
     </div>
   </div>
 
   <!-- CONTACT -->
   <div class="pt-5" id="Contact">
-    <h1>GET IN TOUCH</h1>
+    <h1 class="text-center">GET IN TOUCH</h1>
+    <div class="line-separator center"></div>
     <form action="https://formspree.io/f/xzbodwnz" method="POST" class="pt-2">
       <div class="pb-3">
         <label class="form-label">Your email:</label>
