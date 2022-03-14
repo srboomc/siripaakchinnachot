@@ -18,6 +18,7 @@
 
 body {
   padding-top: 80px;
+  overflow-x: hidden;
 }
 
 a {
@@ -32,6 +33,8 @@ a {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 576px) {
@@ -99,6 +102,7 @@ a {
 .col-4 {
   flex: 0 0 auto;
   width: 33.33333333%;
+  margin-bottom: 4rem;
 }
 
 .col-5 {
@@ -336,6 +340,19 @@ a {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.btn-dark {
+  background-color: #000000;
+}
+
+.btn-outline-dark {
+  background-color: #000000;
+  border-color: white;
+}
+
+.bg-black {
+  background: black;
+}
+
 .flex-container {
   display: flex;
 }
@@ -396,9 +413,7 @@ a {
 .width-50 {
   width: 50%;
 }
-.btn-dark {
-  background-color: #000000;
-}
+
 .btn-action {
   background: linear-gradient(
     90deg,
@@ -433,4 +448,9 @@ textarea {
   appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* COLORS */
+.white {
+  color: white;
 }

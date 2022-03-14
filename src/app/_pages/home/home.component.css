@@ -2,13 +2,19 @@
   position: relative;
   width: 100px;
   height: 3px;
-  background: rgb(94, 96, 226);
+  background: rgb(0, 0, 0);
 }
 
 .line-separator.center {
   margin: auto;
 }
 
+.line-separator.white {
+  position: relative;
+  width: 100px;
+  height: 3px;
+  background: rgb(255, 255, 255);
+}
 /* MAIN-COVER */
 .cover-wrapper {
   padding-top: 200px;
@@ -55,9 +61,63 @@
 }
 
 /* ABOUT */
-.about-wrapper {
+/* .about-wrapper {
   padding: 50px 0;
-  /* text-align: center; */
+} */
+
+.folder-container {
+  width: 60%;
+  margin: 2rem auto;
+}
+.nav-tab {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+ul li a {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-right: 5px;
+  background-color: #000000;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  border: 1px solid #000000;
+  transition: all 0.7s;
+}
+
+ul li a.active {
+  background-color: white;
+  color: #000000;
+  border-bottom: 1px solid white;
+}
+
+ul li a:hover {
+  background-color: white;
+  color: #000000;
+  border-bottom: 1px solid white;
+}
+
+.box-container {
+  margin-top: -1px;
+  border: 1px solid #000000;
+}
+
+.box-content {
+  padding: 20px 20px;
 }
 
 .content {
@@ -66,16 +126,23 @@
   text-align: justify;
 }
 
-/* SKILLS */
+/* SECTION */
+.section-container {
+  background: black;
+}
 
+.section-container > .section-content {
+  padding: 80px 0;
+  text-align: center;
+  color: white;
+  line-height: 5rem;
+}
+
+/* WHAT CAN I DO */
 .card {
-  /* border: #d4d4d4; */
-  /* border-style: solid; */
-  /* border-width: thin; */
   transition: 0.3s;
   width: 100%;
   margin: 0 auto;
-  /* height: 300px; */
   text-align: center;
 }
 
@@ -100,7 +167,7 @@
 
 .card i:hover {
   color: rgb(255, 255, 255);
-  background: rgb(94, 96, 226);
+  background: rgb(0, 0, 0);
   box-shadow: 0px 0px 0px 4px #f7465b;
 }
 
@@ -110,8 +177,8 @@
 }
 
 @media screen and (max-width: 767px) {
-  .card {
-    height: 400px;
+  .folder-container {
+    width: 100%;
   }
 }
 
@@ -141,4 +208,13 @@
   .card > .card-content {
     padding: 10px 20px;
   }
+}
+
+/* SKILLS */
+.full-container {
+  padding: 5px 0;
+}
+
+.card-text {
+  padding: 20px 10px;
 }

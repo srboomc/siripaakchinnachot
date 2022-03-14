@@ -8,21 +8,18 @@ import { HeaderComponent } from './_components/header/header.component';
 import { HomeComponent } from './_pages/home/home.component';
 import { FooterComponent } from './_components/footer/footer.component';
 import { FacebookModule } from 'ngx-facebook';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    HomeComponent,
-    FooterComponent
-  ],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FacebookModule.forRoot()
+    FacebookModule.forRoot(),
+    NgCircleProgressModule.forRoot({}),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -23,14 +23,65 @@ export class HomeComponent implements OnInit {
     },
     {
       id: 3,
-      name: 'GRAPHIC DESIGNER',
+      name: 'GRAPHIC DESIGN',
       description:
         'Designing creative content for online campaigns, print ads, websites, and even videos.',
       icon: 'fa-solid fa-photo-film',
     },
   ];
 
+  navList: Array<string> = ['WHO AM I', 'EDUCATION'];
+  selected: string = 'WHO AM I';
+
+  skills: Array<object | any> = [
+    {
+      id: 1,
+      name: 'TypeScript',
+      percent: 85,
+    },
+    {
+      id: 2,
+      name: 'JavaScript',
+      percent: 85,
+    },
+    {
+      id: 3,
+      name: 'HTML',
+      percent: 80,
+    },
+    {
+      id: 4,
+      name: 'CSS',
+      percent: 65,
+    },
+    {
+      id: 5,
+      name: 'Python',
+      percent: 60,
+    },
+    {
+      id: 6,
+      name: 'SQL',
+      percent: 75,
+    },
+  ];
   constructor() {}
 
   ngOnInit(): void {}
+
+  scrollPosition(name: string) {
+    const divToScroll = document.getElementById(name);
+    if (name === 'Home') {
+      scrollTo(0, 0);
+    } else {
+      divToScroll?.scrollIntoView({
+        block: 'center',
+        behavior: 'smooth',
+      });
+    }
+  }
+
+  select(nav: string) {
+    this.selected = nav;
+  }
 }
