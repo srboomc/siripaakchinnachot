@@ -11,7 +11,7 @@
           Frontend Developer
         </h1>
         <a
-          class="btn btn-dark"
+          class="btn btn-black"
           href="https://www.siripaakchinnachot.com/../../../assets/files/Resume.pdf"
           download
           >RESUME</a
@@ -70,8 +70,8 @@
           <a [ngClass]="{ active: selected === nav }">{{ nav }}</a>
         </li>
       </ul>
-      <div class="box-container">
-        <div class="box-content">
+      <div class="folder-box-container">
+        <div class="folder-box-content">
           <p class="content" *ngIf="selected === 'WHO AM I'">
             I am a frontend developer who has passsion on creating, coding and
             making innovative technologies and products. I am highly motivated
@@ -98,7 +98,7 @@
   <div class="section-content">
     I'M READY FOR THE NEW JOB. CONTACT ME NOW
     <div>
-      <button class="btn btn-outline-dark" (click)="scrollPosition('Contact')">
+      <button class="btn btn-outline-black" (click)="scrollPosition('Contact')">
         CONTACT
       </button>
     </div>
@@ -111,7 +111,7 @@
   <div class="line-separator center"></div>
   <div class="row pt-4">
     <div class="col" *ngFor="let competency of competencies">
-      <div class="card">
+      <div class="card-no-border">
         <i [class]="competency.icon"></i>
         <h3>{{ competency.name }}</h3>
         <p class="content-center">
@@ -129,11 +129,10 @@
     <div class="line-separator center white"></div>
     <div class="row pt-5">
       <div class="col-4" *ngFor="let skill of skills">
-        <div class="card">
+        <div class="card-no-border">
           <circle-progress
             [percent]="skill.percent"
             [radius]="80"
-            [space]="-10"
             [outerStrokeGradient]="true"
             [outerStrokeWidth]="10"
             [outerStrokeColor]="'white'"
@@ -183,6 +182,6 @@
       <textarea name="message" rows="10"></textarea>
     </div>
     <!-- your other form fields go here -->
-    <button type="submit" class="btn btn-dark mt-3">Send</button>
+    <button type="submit" class="btn btn-black mt-3">Send</button>
   </form>
 </div>
