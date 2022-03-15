@@ -107,10 +107,10 @@
 
 <!-- WHAT CAN I DO -->
 <div class="container">
-  <h1 class="text-center">WHAT CAN I DO</h1>
+  <h1 class="text-center">WHAT CAN I DO BESIDES FRONTEND</h1>
   <div class="line-separator center"></div>
   <div class="row pt-4">
-    <div class="col" *ngFor="let competency of competencies">
+    <div class="col-4" *ngFor="let competency of competencies">
       <div class="card-no-border">
         <i [class]="competency.icon"></i>
         <h3>{{ competency.name }}</h3>
@@ -123,7 +123,7 @@
 </div>
 
 <!-- SKILLS -->
-<div class="full-container bg-black">
+<div class="full-container bg-black" id="Skill">
   <div class="container">
     <h1 class="text-center white">MY POWERFUL SKILLS</h1>
     <div class="line-separator center white"></div>

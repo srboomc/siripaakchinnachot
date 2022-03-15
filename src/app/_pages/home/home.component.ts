@@ -11,22 +11,36 @@ export class HomeComponent implements OnInit {
       id: 1,
       name: 'DEVELOPMENT',
       description:
-        'The tasks associated with developing websites for hosting via intranet or internet. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.',
+        'Developing frontend and backend for the websites and mobile applications which I mainly use Angular, React Native and Node js.',
       icon: 'fa-solid fa-code',
     },
     {
       id: 2,
       name: 'WEB DESIGN',
       description:
-        'Plan, create and code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips.',
+        'Plan, design, and create a new website or mobile application by using Figma before developing or coding.',
       icon: 'fa-solid fa-laptop-code',
     },
     {
       id: 3,
       name: 'GRAPHIC DESIGN',
       description:
-        'Designing creative content for online campaigns, print ads, websites, and even videos.',
+        'Designing creative content for online campaigns, print ads, modifying images and even videos by using Adobe Photoshop and Premiere Pro.',
       icon: 'fa-solid fa-photo-film',
+    },
+    {
+      id: 4,
+      name: 'MICROSOFT OFFICE',
+      description:
+        'Doing some document and management on MS Word, MS Excel, Google sheet, and database on MS Access',
+      icon: 'fa-solid fa-file',
+    },
+    {
+      id: 5,
+      name: 'Data Analytics',
+      description:
+        'Basic analysing from the dataset by using Decision tree, Random forest, Naive Bayes, Linear regression, and logistic regression',
+      icon: 'fa-solid fa-chart-line',
     },
   ];
 
