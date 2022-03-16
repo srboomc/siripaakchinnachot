@@ -152,7 +152,8 @@ a:hover {
     display: block;
   }
   #toggle-menu:checked ~ ul {
-    max-height: 600px;
+    max-height: 300px;
+    overflow-y: scroll;
   }
   #toggle-menu:checked ~ label.logo {
     color: rgb(0, 0, 0);
