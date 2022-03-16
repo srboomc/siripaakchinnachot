@@ -109,7 +109,7 @@
 <div class="container">
   <h1 class="text-center">WHAT CAN I DO BESIDES FRONTEND</h1>
   <div class="line-separator center"></div>
-  <div class="row pt-4">
+  <div class="row pt-5">
     <div class="col-4" *ngFor="let competency of competencies">
       <div class="card-no-border">
         <i [class]="competency.icon"></i>
@@ -156,10 +156,7 @@
           <div class="card-text">
             <h3 class="text-center white">{{ skill.name }}</h3>
             <p class="white content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              laboriosam nulla tempore quisquam. Modi, distinctio ipsa. Quasi
-              explicabo velit mollitia, et voluptatem excepturi nisi numquam
-              adipisci recusandae tempore, ratione obcaecati?
+              {{ skill.description }}
             </p>
           </div>
         </div>
@@ -169,7 +166,7 @@
 </div>
 
 <!-- CONTACT -->
-<div class="py-5 container" id="Contact">
+<div class="container" id="Contact">
   <h1 class="text-center">GET IN TOUCH</h1>
   <div class="line-separator center"></div>
   <form action="https://formspree.io/f/xzbodwnz" method="POST" class="pt-2">
