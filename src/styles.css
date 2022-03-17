@@ -364,3 +364,9 @@ textarea {
 .bg-black {
   background: black;
 }
+
+/* FACEBOOK */
+iframe.fb_customer_chat_bounce_in_v2,
+iframe.fb_customer_chat_bounce_out_v2 {
+  left: 10px !important;
+}
