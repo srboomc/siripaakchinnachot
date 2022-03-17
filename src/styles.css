@@ -368,7 +368,7 @@ textarea {
 /* FACEBOOK */
 /* Icon */
 .fb_dialog.fb_dialog_advanced {
-  bottom: 60px;
+  bottom: 60px !important;
 }
 /* Chatbox */
 iframe.fb_customer_chat_bounce_in_v2,
