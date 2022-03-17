@@ -50,6 +50,17 @@ a:hover {
   transition: 0.5s;
 }
 
+a:hover::after {
+  border-bottom: 1px solid black;
+  width: 1.5rem;
+}
+
+a.active {
+  color: rgb(129, 129, 129);
+  border-bottom: 1px solid black;
+  transition: 0.5s;
+}
+
 /* menu-control */
 .menu-control {
   color: black;
@@ -153,8 +164,8 @@ a:hover {
     display: block;
   }
   #toggle-menu:checked ~ ul {
-    max-height: 310px;
-    overflow-y: scroll;
+    max-height: 600px;
+    /* overflow-y: scroll; */
   }
   #toggle-menu:checked ~ label.logo {
     color: rgb(0, 0, 0);
