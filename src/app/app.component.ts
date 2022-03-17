@@ -18,6 +18,9 @@ export class AppComponent implements OnInit {
   }
 
   scrollToTop(): void {
-    scrollTo(0, 0);
+    scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   }
 }
