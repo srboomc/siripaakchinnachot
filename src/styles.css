@@ -368,10 +368,10 @@ textarea {
 /* FACEBOOK */
 /* Icon */
 .fb_dialog.fb_dialog_advanced {
-  bottom: 40px;
+  bottom: 60px;
 }
 /* Chatbox */
 iframe.fb_customer_chat_bounce_in_v2,
 iframe.fb_customer_chat_bounce_out_v2 {
-  bottom: 40px !important;
+  bottom: 60px !important;
 }
