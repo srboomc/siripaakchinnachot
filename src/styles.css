@@ -2,7 +2,7 @@
 @import url(./buttonStyles.css);
 @font-face {
   font-family: Roboto;
-  src: url(assets/fonts/Roboto-Light.ttf);
+  src: url(assets/fonts/Roboto-Light.ttf) format("opentype");
 }
 
 * {
