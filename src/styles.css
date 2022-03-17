@@ -367,11 +367,11 @@ textarea {
 
 /* FACEBOOK */
 /* Icon */
-.fb_dialog.fb_dialog_advanced {
+/* .fb_dialog.fb_dialog_advanced {
   bottom: 60px;
-}
+} */
 /* Chatbox */
-iframe.fb_customer_chat_bounce_in_v2,
+/* iframe.fb_customer_chat_bounce_in_v2,
 iframe.fb_customer_chat_bounce_out_v2 {
   bottom: 60px !important;
-}
+} */
