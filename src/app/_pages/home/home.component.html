@@ -1,19 +1,26 @@
-<div class="container pb-5" >
-
-    <!--  MAIN COVER -->
-    <div class="row" >
-        <div class="col">
-            <div class="cover-wrapper">
-                <h1 class="cover-introduce">Hi, <br>
-                    I am  <span style="color: rgb(94, 96, 226)"> Siripaak Chinnachot</span>   <br>
-                    Frontend Developer 
-                </h1>
-                <a class="btn btn-dark glow" href="https://www.siripaakchinnachot.com/../../../assets/files/Resume.pdf" download>RESUME</a>
-            </div>
-        </div>
-        <div class="col">
-            <div class="cover-wrapper-img">
-                <!-- <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+<div class="container">
+  <!--  MAIN COVER -->
+  <div class="row">
+    <div class="col">
+      <div class="cover-wrapper">
+        <h1 class="cover-introduce">
+          Hi, <br />
+          I am
+          <span style="color: black"> Siripaak Chinnachot</span>
+          <br />
+          Frontend Developer
+        </h1>
+        <a
+          class="btn btn-black"
+          href="https://www.siripaakchinnachot.com/../../../assets/files/Resume.pdf"
+          download
+          >RESUME</a
+        >
+      </div>
+    </div>
+    <div class="col">
+      <div class="cover-wrapper-img">
+        <!-- <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                     <defs>
                       <clipPath id="shape">
                         <path id="blob" d="M428,305Q360,360,305,422.5Q250,485,166,451.5Q82,418,77,334Q72,250,86,175Q100,100,175,66Q250,32,313,78Q376,124,436,187Q496,250,428,305Z" fill="#d1d8e0"></path>
@@ -21,67 +28,157 @@
                     </defs>
                     <image x="0" y="0" width="100%" height="100%" clip-path="url(#shape)" xlink:href="https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.6435-9/81607645_2996926963690491_8910159871756730368_n.jpg?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=09cbfe&amp;_nc_ohc=5HO4gGWhe5YAX8ynjde&amp;_nc_ht=scontent.fbkk12-4.fna&amp;oh=00_AT--TY_9EaRAOvzMjS5BAwn6bYWqTLxwcqE5c2Zh6td2BQ&amp;oe=62121F58" preserveAspectRatio="none"></image>
                 </svg> -->
-                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
-                    <defs>
-                      <clipPath id="shape">
-                        <path id="blob" d="M428,305Q360,360,305,422.5Q250,485,166,451.5Q82,418,77,334Q72,250,86,175Q100,100,175,66Q250,32,313,78Q376,124,436,187Q496,250,428,305Z" fill="#BRBEBD"></path>
-                      </clipPath>
-                    </defs>
-                    <image x="0" y="5" width="100%" height="100%" clip-path="url(#shape)" href="../../../assets/images/Profile_crop.jpg" preserveAspectRatio=""></image>
-                </svg>
-            </div>
-        </div>
+        <svg
+          viewBox="0 0 500 500"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="100%"
+          id="blobSvg"
+        >
+          <defs>
+            <clipPath id="shape">
+              <path
+                id="blob"
+                d="M428,305Q360,360,305,422.5Q250,485,166,451.5Q82,418,77,334Q72,250,86,175Q100,100,175,66Q250,32,313,78Q376,124,436,187Q496,250,428,305Z"
+                fill="#BRBEBD"
+              ></path>
+            </clipPath>
+          </defs>
+          <image
+            x="0"
+            y="5"
+            width="100%"
+            height="100%"
+            clip-path="url(#shape)"
+            href="../../../assets/images/Profile_crop.jpg"
+            preserveAspectRatio=""
+          ></image>
+        </svg>
+      </div>
     </div>
-
-    <!-- ABOUT -->
-    <div id="Aboutme">
-        <div class="about-wrapper">
-            <h1>ABOUT ME</h1>
-            <p class="content">
-                I am a frontend developer who has passsion on creating, coding and making innovative technologies and products. 
-                I am highly motivated person with good multitasking skill. Eager to learn about new things, detail-oriented and excellent team player. 
-                Aiming to use my knowledge as an application developer or working in the field of data analytics.
-            </p>
-            <h3 class="pt-3">EDUCATION</h3>
-            <p class="content">King Mongkut’s institute of Technology Lardkrabang, Bangkok, Thailand <br>
-                Bachelor of Engineering <br> 
-                Major : Computer Innovation Engineering (CIE)</p>
-        </div>
-    </div>
-
-
-    <!-- SKILLS -->
-    <div>
-        <h1>SKILLS</h1>
-        <div class="row pt-2">
-            <div class="col" *ngFor="let skill of skills">
-                <div class="card box-shadow">
-                    <h4 class="card-content">{{ skill.category }}</h4>
-                    <ng-container *ngFor="let subskill of skill.subSkills">
-                        <p class="card-content">
-                            {{ subskill.skillName }}
-                        </p>
-                    </ng-container>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CONTACT -->
-    <div class="pt-5" id="Contact">
-        <h1>GET IN TOUCH</h1>
-        <form action="https://formspree.io/f/xzbodwnz" method="POST" class="pt-2">
-            <div class="pb-3">
-                <label class="form-label">Your email:</label>
-                <input type="email" name="_replyto">
-            </div>
-            <div class="pb-3">
-                <label class="form-label">Your message: </label>
-                <textarea name="message" rows="10"></textarea>
-            </div>
-        <!-- your other form fields go here -->
-        <button type="submit" class="btn btn-dark mt-3">Send</button>
-      </form>
-    </div>
+  </div>
 </div>
 
+<!-- ABOUT -->
+<div id="Aboutme" class="container">
+  <div class="about-wrapper">
+    <h1 class="text-center">ABOUT ME</h1>
+    <div class="line-separator center"></div>
+    <div class="folder-container">
+      <ul class="nav-tab">
+        <li *ngFor="let nav of navList" (click)="select(nav)">
+          <a [ngClass]="{ active: selected === nav }">{{ nav }}</a>
+        </li>
+      </ul>
+      <div class="folder-box-container">
+        <div class="folder-box-content">
+          <p class="content" *ngIf="selected === 'WHO AM I'">
+            I am a frontend developer who has passsion on creating, coding and
+            making innovative technologies and products. I am highly motivated
+            person with good multitasking skill. Eager to learn about new
+            things, detail-oriented and excellent team player. Aiming to use my
+            knowledge as an application developer or working in the field of
+            data analytics.
+          </p>
+          <p class="content" *ngIf="selected === 'EDUCATION'">
+            King Mongkut’s institute of Technology Lardkrabang, Bangkok,
+            Thailand
+            <br />
+            Bachelor of Engineering <br />
+            Major : Computer Innovation Engineering (CIE)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section -->
+<div class="section-container">
+  <div class="section-content">
+    I'M READY FOR THE NEW JOB. CONTACT ME NOW
+    <div>
+      <button class="btn btn-outline-black" (click)="scrollPosition('Contact')">
+        CONTACT
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT CAN I DO -->
+<div class="container">
+  <h1 class="text-center">WHAT CAN I DO BESIDES FRONTEND</h1>
+  <div class="line-separator center"></div>
+  <div class="row pt-5">
+    <div class="col-4" *ngFor="let competency of competencies">
+      <div class="card-no-border">
+        <i [class]="competency.icon"></i>
+        <h3>{{ competency.name }}</h3>
+        <p class="content-center">
+          {{ competency.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div class="full-container bg-black" id="Skill">
+  <div class="container">
+    <h1 class="text-center white">MY POWERFUL SKILLS</h1>
+    <div class="line-separator center white"></div>
+    <div class="row pt-5">
+      <div class="col-4" *ngFor="let skill of skills">
+        <div class="card-no-border">
+          <circle-progress
+            [percent]="skill.percent"
+            [radius]="80"
+            [outerStrokeGradient]="true"
+            [outerStrokeWidth]="10"
+            [outerStrokeColor]="'white'"
+            [outerStrokeGradientStopColor]="'white'"
+            [innerStrokeColor]="'black'"
+            [innerStrokeWidth]="10"
+            [titleFontSize]="'32'"
+            [showTitle]="true"
+            [titleColor]="'white'"
+            [unitsColor]="'white'"
+            [showSubtitle]="false"
+            [animateTitle]="false"
+            [animation]="true"
+            [showUnits]="true"
+            [unitsFontSize]="'16'"
+            [showBackground]="false"
+            [clockwise]="false"
+            [startFromZero]="false"
+            [lazy]="false"
+          ></circle-progress>
+          <div class="card-text">
+            <h3 class="text-center white">{{ skill.name }}</h3>
+            <p class="white content">
+              {{ skill.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="container" id="Contact">
+  <h1 class="text-center">GET IN TOUCH</h1>
+  <div class="line-separator center"></div>
+  <form action="https://formspree.io/f/xzbodwnz" method="POST" class="pt-2">
+    <div class="pb-3">
+      <label class="form-label">Your email:</label>
+      <input type="email" name="_replyto" />
+    </div>
+    <div class="pb-3">
+      <label class="form-label">Your message: </label>
+      <textarea name="message" rows="10"></textarea>
+    </div>
+    <!-- your other form fields go here -->
+    <button type="submit" class="btn btn-black mt-3">Send</button>
+  </form>
+</div>

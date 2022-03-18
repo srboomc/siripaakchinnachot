@@ -13,9 +13,13 @@ export class HeaderComponent implements OnInit {
   scrollPosition(name: string) {
     const divToScroll = document.getElementById(name);
     if (name === 'Home') {
-      scrollTo(0, 0);
+      scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
     } else {
       divToScroll?.scrollIntoView({
+        block: 'center',
         behavior: 'smooth',
       });
     }
