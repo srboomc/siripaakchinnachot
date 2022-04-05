@@ -114,6 +114,7 @@ a {
 .col-6 {
   flex: 0 0 auto;
   width: 50%;
+  margin-bottom: 4rem;
 }
 
 .col-7 {

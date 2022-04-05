@@ -173,6 +173,9 @@ ul li a:hover {
   .col-4 {
     flex: 100%;
   }
+  .col-6{
+    flex: 100%;
+  }
 }
 
 /* SKILLS */
@@ -183,3 +186,5 @@ ul li a:hover {
 .card-text {
   padding: 20px 10px;
 }
+
+

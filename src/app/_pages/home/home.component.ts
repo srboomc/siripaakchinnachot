@@ -8,6 +8,7 @@ import { Skill } from 'src/app/_model/Skill';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  modal = document.getElementById('myModal');
   competencies: Competency[] = [
     {
       id: 1,
