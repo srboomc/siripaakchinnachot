@@ -188,6 +188,8 @@
         <img
           src="assets/files/Intlab.png"
           style="width: 320px; height: 450px"
+          class="img-portfolio"
+          (click)="openModal('assets/files/Intlab.png')"
         />
         <h3 class="pt-4">INTLAB</h3>
         <p class="content-center">
@@ -201,6 +203,8 @@
         <img
           src="assets/files/BookStore.png"
           style="max-width: 380px; height: auto"
+          class="img-portfolio"
+          (click)="openModal('assets/files/BookStore.png')"
         />
         <h3 class="pt-4">Online Book Store</h3>
         <p class="content-center">
@@ -213,6 +217,8 @@
         <img
           src="assets/files/TeamManagement.png"
           style="max-width: 380px; height: auto"
+          class="img-portfolio"
+          (click)="openModal('assets/files/TeamManagement.png')"
         />
         <h3 class="pt-4">Team Management</h3>
         <p class="content-center">
@@ -239,4 +245,11 @@
     <!-- your other form fields go here -->
     <button type="submit" class="btn btn-black mt-3">Send</button>
   </form>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal" *ngIf="isShowModal">
+  <span class="close" (click)="isShowModal = false">&times;</span>
+  <img class="modal-content" id="img" [src]="showImage" />
+  <div id="caption"></div>
 </div>

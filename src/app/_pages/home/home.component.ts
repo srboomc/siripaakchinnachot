@@ -8,7 +8,9 @@ import { Skill } from 'src/app/_model/Skill';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  modal = document.getElementById('myModal');
+  isShowModal: boolean = false;
+  showImage: string = '';
+
   competencies: Competency[] = [
     {
       id: 1,
@@ -112,5 +114,10 @@ export class HomeComponent implements OnInit {
 
   select(nav: string) {
     this.selected = nav;
+  }
+
+  openModal(src: string) {
+    this.isShowModal = !this.isShowModal;
+    this.showImage = src;
   }
 }
