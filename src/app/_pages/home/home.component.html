@@ -72,7 +72,7 @@
       <div class="folder-box-container">
         <div class="folder-box-content">
           <p class="content" *ngIf="selected === 'WHO AM I'">
-            I am a frontend developer who has passsion on creating, coding and
+            I am a frontend developer who has passion on creating, coding and
             making innovative technologies and products. I am highly motivated
             person with good multitasking skill. Eager to learn about new
             things, detail-oriented and excellent team player. Aiming to use my
@@ -248,8 +248,12 @@
 </div>
 
 <!-- The Modal -->
-<div id="myModal" class="modal" *ngIf="isShowModal">
-  <span class="close" (click)="isShowModal = false">&times;</span>
+<div
+  id="myModal"
+  class="modal"
+  *ngIf="isShowModal"
+  (click)="isShowModal = !isShowModal"
+>
+  <span class="close" (click)="isShowModal = !isShowModal">&times;</span>
   <img class="modal-content" id="img" [src]="showImage" />
-  <div id="caption"></div>
 </div>
