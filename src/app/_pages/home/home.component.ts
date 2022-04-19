@@ -56,43 +56,31 @@ export class HomeComponent implements OnInit {
     {
       id: 1,
       name: 'TypeScript',
-      description:
-        'TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language.',
       percent: 85,
     },
     {
       id: 2,
       name: 'JavaScript',
-      description:
-        'JavaScript is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS',
       percent: 85,
     },
     {
       id: 3,
       name: 'HTML',
-      description:
-        'The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.',
       percent: 80,
     },
     {
       id: 4,
       name: 'CSS',
-      description:
-        'Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.',
       percent: 65,
     },
     {
       id: 5,
       name: 'Python',
-      description:
-        'Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.',
       percent: 60,
     },
     {
       id: 6,
       name: 'SQL',
-      description:
-        'SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system.',
       percent: 75,
     },
   ];

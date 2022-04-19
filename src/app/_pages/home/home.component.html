@@ -106,7 +106,7 @@
 
 <!-- WHAT CAN I DO -->
 <div class="container">
-  <h1 class="text-center">WHAT CAN I DO BESIDES FRONTEND</h1>
+  <h1 class="text-center">WHAT CAN I DO</h1>
   <div class="line-separator center"></div>
   <div class="row pt-5">
     <div class="col-4" *ngFor="let competency of competencies">
@@ -154,9 +154,6 @@
           ></circle-progress>
           <div class="card-text">
             <h3 class="text-center white">{{ skill.name }}</h3>
-            <p class="white content">
-              {{ skill.description }}
-            </p>
           </div>
         </div>
       </div>
@@ -178,7 +175,7 @@
         <h3 class="pt-4">A1CE MOBILE APPLICATION DEMO</h3>
         <p class="content-center">
           This application was made for student in CMKL. They use it to track
-          their learning progress. This application was made by using React
+          their learning progress.
           Native
         </p>
       </div>
@@ -189,44 +186,14 @@
           src="assets/files/Intlab.png"
           style="width: 320px; height: 450px"
           class="img-portfolio"
-          (click)="openModal('assets/files/Intlab.png')"
         />
         <h3 class="pt-4">INTLAB</h3>
         <p class="content-center">
           This website was made for Interior Design. Customers can view the
-          portfolio or acheivement here. This website was made by using Angular
+          portfolio or acheivement here.
         </p>
       </div>
     </div>
-    <div class="col-6">
-      <div class="card-no-border">
-        <img
-          src="assets/files/BookStore.png"
-          style="max-width: 380px; height: auto"
-          class="img-portfolio"
-          (click)="openModal('assets/files/BookStore.png')"
-        />
-        <h3 class="pt-4">Online Book Store</h3>
-        <p class="content-center">
-          This website was the first time of my coding on React.
-        </p>
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="card-no-border">
-        <img
-          src="assets/files/TeamManagement.png"
-          style="max-width: 380px; height: auto"
-          class="img-portfolio"
-          (click)="openModal('assets/files/TeamManagement.png')"
-        />
-        <h3 class="pt-4">Team Management</h3>
-        <p class="content-center">
-          This website was integrated with Node js or MEAN Stack.
-        </p>
-      </div>
-    </div>
-  </div>
 </div>
 
 <!-- CONTACT -->
@@ -245,15 +212,4 @@
     <!-- your other form fields go here -->
     <button type="submit" class="btn btn-black mt-3">Send</button>
   </form>
-</div>
-
-<!-- The Modal -->
-<div
-  id="myModal"
-  class="modal"
-  *ngIf="isShowModal"
-  (click)="isShowModal = !isShowModal"
->
-  <span class="close" (click)="isShowModal = !isShowModal">&times;</span>
-  <img class="modal-content" id="img" [src]="showImage" />
 </div>
