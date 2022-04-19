@@ -9,6 +9,7 @@ import { HomeComponent } from './_pages/home/home.component';
 import { FooterComponent } from './_components/footer/footer.component';
 import { FacebookModule } from 'ngx-facebook';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ClickOutsideModule } from 'ng-click-outside';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, HomeComponent, FooterComponent],
@@ -18,6 +19,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     HttpClientModule,
     FacebookModule.forRoot(),
     NgCircleProgressModule.forRoot({}),
+    ClickOutsideModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

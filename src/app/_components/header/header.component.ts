@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
       });
     } else {
       divToScroll?.scrollIntoView({
-        block: 'center',
+        block: 'end',
         behavior: 'smooth',
       });
     }

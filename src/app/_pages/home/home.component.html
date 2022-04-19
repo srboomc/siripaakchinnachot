@@ -12,8 +12,7 @@
         </h1>
         <a
           class="btn btn-black"
-          href="https://www.siripaakchinnachot.com/../../../assets/files/Resume.pdf"
-          download
+          href="https://siripaakchinnachot.com/../../../assets/files/Resume.pdf"
           >RESUME</a
         >
       </div>
@@ -73,7 +72,7 @@
       <div class="folder-box-container">
         <div class="folder-box-content">
           <p class="content" *ngIf="selected === 'WHO AM I'">
-            I am a frontend developer who has passsion on creating, coding and
+            I am a frontend developer who has passion on creating, coding and
             making innovative technologies and products. I am highly motivated
             person with good multitasking skill. Eager to learn about new
             things, detail-oriented and excellent team player. Aiming to use my
@@ -165,6 +164,71 @@
   </div>
 </div>
 
+<!-- Portfolio -->
+<div class="container" id="Portfolio">
+  <h1 class="text-center">PORTFOLIO</h1>
+  <div class="line-separator center"></div>
+  <div class="row pt-5">
+    <div class="col-6">
+      <div class="card-no-border">
+        <video width="320" height="450" controls>
+          <source src="assets/files/A1CEDEMO.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h3 class="pt-4">A1CE MOBILE APPLICATION DEMO</h3>
+        <p class="content-center">
+          This application was made for student in CMKL. They use it to track
+          their learning progress. This application was made by using React
+          Native
+        </p>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card-no-border">
+        <img
+          src="assets/files/Intlab.png"
+          style="width: 320px; height: 450px"
+          class="img-portfolio"
+          (click)="openModal('assets/files/Intlab.png')"
+        />
+        <h3 class="pt-4">INTLAB</h3>
+        <p class="content-center">
+          This website was made for Interior Design. Customers can view the
+          portfolio or acheivement here. This website was made by using Angular
+        </p>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card-no-border">
+        <img
+          src="assets/files/BookStore.png"
+          style="max-width: 380px; height: auto"
+          class="img-portfolio"
+          (click)="openModal('assets/files/BookStore.png')"
+        />
+        <h3 class="pt-4">Online Book Store</h3>
+        <p class="content-center">
+          This website was the first time of my coding on React.
+        </p>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card-no-border">
+        <img
+          src="assets/files/TeamManagement.png"
+          style="max-width: 380px; height: auto"
+          class="img-portfolio"
+          (click)="openModal('assets/files/TeamManagement.png')"
+        />
+        <h3 class="pt-4">Team Management</h3>
+        <p class="content-center">
+          This website was integrated with Node js or MEAN Stack.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- CONTACT -->
 <div class="container" id="Contact">
   <h1 class="text-center">GET IN TOUCH</h1>
@@ -181,4 +245,15 @@
     <!-- your other form fields go here -->
     <button type="submit" class="btn btn-black mt-3">Send</button>
   </form>
+</div>
+
+<!-- The Modal -->
+<div
+  id="myModal"
+  class="modal"
+  *ngIf="isShowModal"
+  (click)="isShowModal = !isShowModal"
+>
+  <span class="close" (click)="isShowModal = !isShowModal">&times;</span>
+  <img class="modal-content" id="img" [src]="showImage" />
 </div>
