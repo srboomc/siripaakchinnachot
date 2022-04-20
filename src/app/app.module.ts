@@ -8,8 +8,7 @@ import { HeaderComponent } from './_components/header/header.component';
 import { HomeComponent } from './_pages/home/home.component';
 import { FooterComponent } from './_components/footer/footer.component';
 import { FacebookModule } from 'ngx-facebook';
-import { NgCircleProgressModule } from 'ng-circle-progress';
-import { ClickOutsideModule } from 'ng-click-outside';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, HomeComponent, FooterComponent],
@@ -18,8 +17,7 @@ import { ClickOutsideModule } from 'ng-click-outside';
     AppRoutingModule,
     HttpClientModule,
     FacebookModule.forRoot(),
-    NgCircleProgressModule.forRoot({}),
-    ClickOutsideModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

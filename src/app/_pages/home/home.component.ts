@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Competency } from 'src/app/_model/Competency';
 import { Skill } from 'src/app/_model/Skill';
 
@@ -52,48 +53,97 @@ export class HomeComponent implements OnInit {
   navList: Array<string> = ['WHO AM I', 'EDUCATION'];
   selected: string = 'WHO AM I';
 
-  skills: Skill[] = [
+  customOptions: OwlOptions = {
+    loop: false,
+    mouseDrag: true,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 700,
+    navText: [
+      '<i class="fa-solid fa-chevron-left"></i>',
+      '<i class="fa-solid fa-chevron-right"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 2,
+      },
+      740: {
+        items: 3,
+      },
+      940: {
+        items: 3,
+      },
+    },
+    nav: true,
+  };
+
+  portfolios: any = [
     {
       id: 1,
-      name: 'TypeScript',
-      description:
-        'TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language.',
-      percent: 85,
+      name: 'A1CE Mobile application',
+      category: 'application',
+      image: '../../../assets/images/A1CE.png',
+      link: '#',
     },
     {
       id: 2,
-      name: 'JavaScript',
-      description:
-        'JavaScript is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS',
-      percent: 85,
+      name: 'Alinea Bkk',
+      category: 'website',
+      image: '../../../assets/images/Alinea.png',
+      link: 'https://alineabkk.netlify.app',
     },
     {
       id: 3,
-      name: 'HTML',
-      description:
-        'The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.',
-      percent: 80,
+      name: 'Intlab',
+      category: 'website',
+      image: '../../../assets/images/Intlab.png',
+      link: '#',
     },
     {
       id: 4,
-      name: 'CSS',
-      description:
-        'Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.',
-      percent: 65,
+      name: 'Interactive Cozmo',
+      category: 'Internet Of Things',
+      image: '../../../assets/images/unavailable_image_placeholder.png',
+      link: 'https://www.youtube.com/watch?v=ZjOdVatHVoQ&list=PLa8wyslUO1luCs5ThOqLlsp9B1bERSKh6&index=22&ab_channel=TagunJivasitthikul',
     },
     {
       id: 5,
-      name: 'Python',
-      description:
-        'Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.',
-      percent: 60,
+      name: 'Automatic adjust table',
+      category: 'Internet Of Things',
+      image: '../../../assets/images/unavailable_image_placeholder.png',
+      link: 'https://cie.kmitl.ac.th/news/cie-students-project-series-ep-3-smart-office-table/',
     },
     {
       id: 6,
-      name: 'SQL',
-      description:
-        'SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system.',
-      percent: 75,
+      name: 'Automatic check attendance',
+      category: 'Internet Of Things',
+      image: '../../../assets/images/unavailable_image_placeholder.png',
+      link: '#',
+    },
+    {
+      id: 7,
+      name: 'Learning Course website design',
+      category: 'Design',
+      image: '../../../assets/images/Course.png',
+      link: 'https://www.figma.com/file/hVagusrRNa0iLv3bckQ4Af/SiripaakChinnachot_61011334?node-id=0%3A1',
+    },
+    {
+      id: 8,
+      name: 'Smart piggy bank',
+      category: 'Internet Of Things',
+      image: '../../../assets/images/unavailable_image_placeholder.png',
+      link: 'https://www.youtube.com/watch?v=efmyejVVIIs&list=PLa8wyslUO1luCs5ThOqLlsp9B1bERSKh6&index=4&ab_channel=TagunJivasitthikul',
+    },
+    {
+      id: 9,
+      name: 'Zombie survival game',
+      category: 'Virtual Reality',
+      image: '../../../assets/images/unavailable_image_placeholder.png',
+      link: '#',
     },
   ];
   constructor() {}
@@ -116,8 +166,9 @@ export class HomeComponent implements OnInit {
     this.selected = nav;
   }
 
-  openModal(src: string) {
-    this.isShowModal = !this.isShowModal;
-    this.showImage = src;
+  onNavigate(link: string) {
+    if (link !== '#') {
+      window.open(link, '_blank');
+    }
   }
 }

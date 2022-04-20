@@ -2,23 +2,19 @@
   <!--  MAIN COVER -->
   <div class="row">
     <div class="col">
-      <div class="cover-wrapper">
-        <h1 class="cover-introduce">
+      <div class="cover-page__container">
+        <h1 class="cover-page__text">
           Hi, <br />
           I am
           <span style="color: black"> Siripaak Chinnachot</span>
           <br />
-          Frontend Developer
+          Web/Application Developer
         </h1>
-        <a
-          class="btn btn-black"
-          href="https://siripaakchinnachot.com/../../../assets/files/Resume.pdf"
-          >RESUME</a
-        >
+        <a class="btn btn-black" href="https://github.com/srboomc">GITHUB</a>
       </div>
     </div>
     <div class="col">
-      <div class="cover-wrapper-img">
+      <div class="cover-page__img">
         <!-- <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                     <defs>
                       <clipPath id="shape">
@@ -60,18 +56,18 @@
 
 <!-- ABOUT -->
 <div id="Aboutme" class="container">
-  <div class="about-wrapper">
+  <div class="container-60">
     <h1 class="text-center">ABOUT ME</h1>
     <div class="line-separator center"></div>
-    <div class="folder-container">
-      <ul class="nav-tab">
-        <li *ngFor="let nav of navList" (click)="select(nav)">
+    <div class="container__center">
+      <ul class="horizontal-list">
+        <li *ngFor="let nav of navList" (click)="select(nav)" class="list-item">
           <a [ngClass]="{ active: selected === nav }">{{ nav }}</a>
         </li>
       </ul>
-      <div class="folder-box-container">
-        <div class="folder-box-content">
-          <p class="content" *ngIf="selected === 'WHO AM I'">
+      <div class="folder-box__container">
+        <div class="folder-box__body">
+          <p class="text__content" *ngIf="selected === 'WHO AM I'">
             I am a frontend developer who has passion on creating, coding and
             making innovative technologies and products. I am highly motivated
             person with good multitasking skill. Eager to learn about new
@@ -79,7 +75,7 @@
             knowledge as an application developer or working in the field of
             data analytics.
           </p>
-          <p class="content" *ngIf="selected === 'EDUCATION'">
+          <p class="text__content" *ngIf="selected === 'EDUCATION'">
             King Mongkut’s institute of Technology Lardkrabang, Bangkok,
             Thailand
             <br />
@@ -93,8 +89,8 @@
 </div>
 
 <!-- Section -->
-<div class="section-container">
-  <div class="section-content">
+<div class="container-fluid bg-black">
+  <div class="content__center">
     I'M READY FOR THE NEW JOB. CONTACT ME NOW
     <div>
       <button class="btn btn-outline-black" (click)="scrollPosition('Contact')">
@@ -106,7 +102,7 @@
 
 <!-- WHAT CAN I DO -->
 <div class="container">
-  <h1 class="text-center">WHAT CAN I DO BESIDES FRONTEND</h1>
+  <h1 class="text-center">WHAT CAN I DO</h1>
   <div class="line-separator center"></div>
   <div class="row pt-5">
     <div class="col-4" *ngFor="let competency of competencies">
@@ -122,44 +118,13 @@
 </div>
 
 <!-- SKILLS -->
-<div class="full-container bg-black" id="Skill">
-  <div class="container">
-    <h1 class="text-center white">MY POWERFUL SKILLS</h1>
-    <div class="line-separator center white"></div>
-    <div class="row pt-5">
-      <div class="col-4" *ngFor="let skill of skills">
-        <div class="card-no-border">
-          <circle-progress
-            [percent]="skill.percent"
-            [radius]="80"
-            [outerStrokeGradient]="true"
-            [outerStrokeWidth]="10"
-            [outerStrokeColor]="'white'"
-            [outerStrokeGradientStopColor]="'white'"
-            [innerStrokeColor]="'black'"
-            [innerStrokeWidth]="10"
-            [titleFontSize]="'32'"
-            [showTitle]="true"
-            [titleColor]="'white'"
-            [unitsColor]="'white'"
-            [showSubtitle]="false"
-            [animateTitle]="false"
-            [animation]="true"
-            [showUnits]="true"
-            [unitsFontSize]="'16'"
-            [showBackground]="false"
-            [clockwise]="false"
-            [startFromZero]="false"
-            [lazy]="false"
-          ></circle-progress>
-          <div class="card-text">
-            <h3 class="text-center white">{{ skill.name }}</h3>
-            <p class="white content">
-              {{ skill.description }}
-            </p>
-          </div>
-        </div>
-      </div>
+<div class="container-fluid bg-black pt-2" id="Skill">
+  <div class="container text-center">
+    <h1 class="white">MY POWERFUL SKILLS</h1>
+    <div class="content__center">
+      <i class="fa-solid fa-hammer white" style="font-size: 80px"></i>
+      <h2 class="white">COMMING SOON</h2>
+      <p class="white">This section is still under construction.</p>
     </div>
   </div>
 </div>
@@ -168,65 +133,20 @@
 <div class="container" id="Portfolio">
   <h1 class="text-center">PORTFOLIO</h1>
   <div class="line-separator center"></div>
-  <div class="row pt-5">
-    <div class="col-6">
-      <div class="card-no-border">
-        <video width="320" height="450" controls>
-          <source src="assets/files/A1CEDEMO.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <h3 class="pt-4">A1CE MOBILE APPLICATION DEMO</h3>
-        <p class="content-center">
-          This application was made for student in CMKL. They use it to track
-          their learning progress. This application was made by using React
-          Native
-        </p>
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let portfolio of portfolios">
+      <div class="card-curve__container" (click)="onNavigate(portfolio.link)">
+        <div class="card-curve__top">
+          <img [src]="portfolio.image" />
+        </div>
+        <div class="card-curve__body">
+          <p class="red uppercase">{{ portfolio.category }}</p>
+          <h3 class="white">{{ portfolio.name }}</h3>
+          <p class="red" *ngIf="portfolio.link === '#'">Link is unavailable</p>
+        </div>
       </div>
-    </div>
-    <div class="col-6">
-      <div class="card-no-border">
-        <img
-          src="assets/files/Intlab.png"
-          style="width: 320px; height: 450px"
-          class="img-portfolio"
-          (click)="openModal('assets/files/Intlab.png')"
-        />
-        <h3 class="pt-4">INTLAB</h3>
-        <p class="content-center">
-          This website was made for Interior Design. Customers can view the
-          portfolio or acheivement here. This website was made by using Angular
-        </p>
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="card-no-border">
-        <img
-          src="assets/files/BookStore.png"
-          style="max-width: 380px; height: auto"
-          class="img-portfolio"
-          (click)="openModal('assets/files/BookStore.png')"
-        />
-        <h3 class="pt-4">Online Book Store</h3>
-        <p class="content-center">
-          This website was the first time of my coding on React.
-        </p>
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="card-no-border">
-        <img
-          src="assets/files/TeamManagement.png"
-          style="max-width: 380px; height: auto"
-          class="img-portfolio"
-          (click)="openModal('assets/files/TeamManagement.png')"
-        />
-        <h3 class="pt-4">Team Management</h3>
-        <p class="content-center">
-          This website was integrated with Node js or MEAN Stack.
-        </p>
-      </div>
-    </div>
-  </div>
+    </ng-template>
+  </owl-carousel-o>
 </div>
 
 <!-- CONTACT -->
@@ -245,15 +165,4 @@
     <!-- your other form fields go here -->
     <button type="submit" class="btn btn-black mt-3">Send</button>
   </form>
-</div>
-
-<!-- The Modal -->
-<div
-  id="myModal"
-  class="modal"
-  *ngIf="isShowModal"
-  (click)="isShowModal = !isShowModal"
->
-  <span class="close" (click)="isShowModal = !isShowModal">&times;</span>
-  <img class="modal-content" id="img" [src]="showImage" />
 </div>
