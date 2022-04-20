@@ -180,12 +180,13 @@ ul.horizontal-list li.list-item a:hover {
   background-color: #16181c;
   margin: 2rem;
   padding: 1.5rem;
-  height: auto;
+  height: 450px;
   max-width: 100%;
 }
 
 .card-curve__container > .card-curve__top {
   max-width: 100%;
+  height: auto;
   overflow: hidden;
   border-radius: 1.5rem;
   background-color: white;
