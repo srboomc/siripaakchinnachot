@@ -1,0 +1,15 @@
+div.error-container {
+  line-height: 80px;
+}
+
+h1.error-header {
+  font-size: 120px;
+}
+
+h2.error-subheader {
+  font-size: 32px;
+}
+
+p.error-body {
+  font-size: 18px;
+}
