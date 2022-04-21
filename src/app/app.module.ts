@@ -10,9 +10,10 @@ import { HomeComponent } from './_pages/home/home.component';
 import { FooterComponent } from './_components/footer/footer.component';
 import { FacebookModule } from 'ngx-facebook';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ErrorComponent } from './_pages/error/error.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, FooterComponent, ErrorComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ErrorComponent } from './_pages/error/error.component';
 import { HomeComponent } from './_pages/home/home.component';
 
 const routes: Routes = [
@@ -9,8 +10,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '',
-    pathMatch: 'full',
+    component: ErrorComponent,
   },
 ];
 

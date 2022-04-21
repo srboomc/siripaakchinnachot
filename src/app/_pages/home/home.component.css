@@ -166,10 +166,10 @@ ul.horizontal-list li.list-item a:hover {
 }
 
 /* PORTFOLIO */
-.red{
+.red {
   color: #f7465b;
 }
-.uppercase{
+.uppercase {
   text-transform: uppercase;
 }
 .card-curve__container {
@@ -192,12 +192,12 @@ ul.horizontal-list li.list-item a:hover {
   background-color: white;
 }
 
-.card-curve__container > .card-curve-image__container > img{
+.card-curve__container > .card-curve-image__container > img {
   height: 300px;
   object-fit: cover;
 }
 
-.card-curve__container > .card-curve-image__container > img:hover{
+.card-curve__container > .card-curve-image__container > img:hover {
   transition: all 0.3s;
   transform: scale(1.2);
 }
@@ -213,12 +213,11 @@ ul.horizontal-list li.list-item a:hover {
     height: 400px;
     padding: 1.5rem;
   }
-  
-  .card-curve__container > .card-curve-image__container > img{
+
+  .card-curve__container > .card-curve-image__container > img {
     height: 200px;
     object-fit: cover;
   }
-  
 }
 .line-separator {
   position: relative;
