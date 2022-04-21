@@ -1,71 +1,53 @@
-.line-separator {
-  position: relative;
-  width: 100px;
-  height: 3px;
-  background: rgb(0, 0, 0);
-}
-
-.line-separator.center {
-  margin: auto;
-}
-
-.line-separator.white {
-  position: relative;
-  width: 100px;
-  height: 3px;
-  background: rgb(255, 255, 255);
-}
-
 /* MAIN-COVER */
-.cover-wrapper {
+.cover-page__container {
   padding-top: 10rem;
   text-align: center;
 }
 
-h1.cover-introduce {
+h1.cover-page__text {
   line-height: 2;
 }
 
-.cover-wrapper-img {
+.cover-page__img {
   padding-top: 5px;
 }
 
 @media screen and (max-width: 1199px) {
-  .cover-wrapper {
+  .cover-page__container {
     padding-top: 120px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .cover-wrapper {
+  .cover-page__container {
     padding-top: 50px;
   }
 }
 
 /* ABOUT */
-.about-wrapper {
+.container-60 {
   width: 60%;
   margin: auto;
 }
 
-.folder-container {
+.container__center {
   width: 100%;
   margin: 2rem auto;
 }
 
-ul {
+ul.horizontal-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-ul li {
+ul.horizontal-list li.list-item {
   float: left;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
 }
 
-ul li a {
+ul.horizontal-list li.list-item a {
   display: inline-block;
   padding: 8px 20px;
   margin-right: 5px;
@@ -79,39 +61,39 @@ ul li a {
   transition: all 0.7s;
 }
 
-ul li a.active {
+ul.horizontal-list li.list-item a.active {
   background-color: white;
   color: #000000;
   border-bottom: 1px solid white;
 }
 
-ul li a:hover {
+ul.horizontal-list li.list-item a:hover {
   background-color: white;
   color: #000000;
   border-bottom: 1px solid white;
 }
 
-.folder-box-container {
+.folder-box__container {
   margin-top: -1px;
   border: 1px solid #000000;
 }
 
-.folder-box-content {
+.folder-box__body {
   padding: 20px 20px;
 }
 
-.content {
+.text__content {
   padding-top: 15px;
   line-height: 30px;
-  /* text-align: justify; */
+  text-align: justify;
 }
 
 /* SECTION */
-.section-container {
+.bg-black {
   background: black;
 }
 
-.section-container > .section-content {
+.content__center {
   padding: 60px 0;
   text-align: center;
   color: white;
@@ -154,18 +136,18 @@ ul li a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .folder-container {
+  .container__center {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 598px) {
-  .about-wrapper {
+  .container-60 {
     width: 100%;
   }
 
   .col,
-  .cover-wrapper {
+  .cover-page__container {
     flex: 100%;
     padding: 20px 0;
   }
@@ -179,19 +161,78 @@ ul li a:hover {
 }
 
 /* SKILLS */
-.full-container {
-  padding: 5px 0;
-}
-
 .card-text {
   padding: 20px 10px;
 }
 
 /* PORTFOLIO */
-img.img-portfolio {
-  transition: all 0.5s;
+.red {
+  color: #f7465b;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.card-curve__container {
+  cursor: pointer;
+  border-radius: 1.5rem;
+  border: 1px solid #000000;
+  transition: all 0.3s;
+  background-color: #16181c;
+  margin: 2rem;
+  padding: 1.5rem;
+  height: 450px;
+  max-width: 100%;
 }
 
-img.img-portfolio:hover {
-  opacity: 0.7;
+.card-curve__container > .card-curve-image__container {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background-color: white;
+}
+
+.card-curve__container > .card-curve-image__container > img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-curve__container > .card-curve-image__container > img:hover {
+  transition: all 0.3s;
+  transform: scale(1.2);
+}
+
+.card-curve__container > .card-curve__body {
+  padding: 16px 0px;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1195px) {
+  .card-curve__container {
+    height: 400px;
+    padding: 1.5rem;
+  }
+
+  .card-curve__container > .card-curve-image__container > img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+.line-separator {
+  position: relative;
+  width: 100px;
+  height: 3px;
+  background: rgb(0, 0, 0);
+}
+
+.line-separator.center {
+  margin: auto;
+}
+
+.line-separator.white {
+  position: relative;
+  width: 100px;
+  height: 3px;
+  background: rgb(255, 255, 255);
 }
