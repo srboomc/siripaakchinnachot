@@ -184,7 +184,7 @@ ul.horizontal-list li.list-item a:hover {
   max-width: 100%;
 }
 
-.card-curve__container > .card-curve__top {
+.card-curve__container > .card-curve-image__container {
   max-width: 100%;
   height: auto;
   overflow: hidden;
@@ -192,7 +192,12 @@ ul.horizontal-list li.list-item a:hover {
   background-color: white;
 }
 
-.card-curve__container > .card-curve__top > img:hover{
+.card-curve__container > .card-curve-image__container > img{
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-curve__container > .card-curve-image__container > img:hover{
   transition: all 0.3s;
   transform: scale(1.2);
 }
@@ -203,10 +208,15 @@ ul.horizontal-list li.list-item a:hover {
   overflow: hidden;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1195px) {
   .card-curve__container {
     height: 400px;
     padding: 1.5rem;
+  }
+  
+  .card-curve__container > .card-curve-image__container > img{
+    height: 200px;
+    object-fit: cover;
   }
   
 }
