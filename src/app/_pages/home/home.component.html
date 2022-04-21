@@ -136,7 +136,7 @@
   <owl-carousel-o [options]="customOptions">
     <ng-template carouselSlide *ngFor="let portfolio of portfolios">
       <div class="card-curve__container" (click)="onNavigate(portfolio.link)">
-        <div class="card-curve__top">
+        <div class="card-curve-image__container">
           <img [src]="portfolio.image" />
         </div>
         <div class="card-curve__body">
