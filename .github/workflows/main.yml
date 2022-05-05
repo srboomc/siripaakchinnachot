@@ -39,9 +39,9 @@ jobs:
         run: npm install
 
       # Runs build and deploy
-      - name: Build
-        run: |
-          npm run build
+      # - name: Build
+      #   run: |
+      #     npm run build
 
       - name: Deploy
         run: |
