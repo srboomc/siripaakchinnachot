@@ -31,6 +31,10 @@ jobs:
       #     npm run test
 
       # Runs build and deploy
-      - name: Run build and deploy
+      - name: Build
+        run: |
+          npm run build --prod
+
+      - name: Deploy
         run: |
           npm run deploy
